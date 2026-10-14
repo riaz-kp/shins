@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shins Joy — Architectural Designer, Set Designer &amp; Artist</title>
+  <meta name="description" content="Shins Joy is an artist and architectural designer from Kerala — designing homes, building sets for Malayalam cinema (Aadu 3, Vala), drawing in blue ballpoint and painting walls.">
+  <meta property="og:title" content="Shins Joy — Artist &amp; Architectural Designer">
+  <meta property="og:description" content="Architecture · Set design for Malayalam cinema · Illustration · Wall art">
+  <meta property="og:image" content="../public/media/arch-malargal-1.webp">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f2ede3">
+  <link rel="icon" href="../app/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Malayalam:wght@600;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Runs before paint: enables JS-only styles and restores the saved theme without a flash.
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('sj-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <noscript><style>.loader{display:none}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#intro">Skip to content</a>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <svg class="loader-arch" viewBox="0 0 120 170" fill="none">
+        <path pathLength="1" d="M8 166V64a52 52 0 0 1 104 0v102" />
+        <path pathLength="1" d="M28 166V70a32 32 0 0 1 64 0v96" />
+        <path pathLength="1" d="M8 166h104" />
+      </svg>
+      <p class="loader-name">Shins Joy</p>
+      <p class="loader-count"><span>0</span></p>
+    </div>
+    <div class="loader-curtain"><span></span><span></span><span></span></div>
+  </div>
+
+  <!-- ============ CURSOR / OVERLAYS ============ -->
+  <div class="cursor is-hidden" aria-hidden="true"><div class="cursor-ring"><span class="cursor-label">View</span></div></div>
+  <div class="cursor-dot is-hidden" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hover-preview" aria-hidden="true"><img alt="" src="../public/media/arch-malargal-4.webp"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav-logo" aria-label="Shins Joy, back to top">
+      <span class="logo-mark">S</span><span class="logo-text">Shins Joy</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#architecture">Architecture</a>
+      <a href="#cinema">Set Design</a>
+      <a href="#illustration">Illustration</a>
+      <a href="#wall-art">Wall Art</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.3 6.5 7.9 6.5 11.4A6.5 6.5 0 0 1 5.5 14c0-3.6 2.9-7.2 6.5-11.5Z"/></svg>
+      </button>
+      <a href="#contact" class="nav-cta magnetic">Say hello</a>
+      <button class="nav-burger" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span class="sr-only">Menu</span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#architecture"><small>01</small>Architecture</a>
+      <a href="#cinema"><small>02</small>Set Design</a>
+      <a href="#illustration"><small>03</small>Illustration</a>
+      <a href="#wall-art"><small>04</small>Wall Art</a>
+      <a href="#contact"><small>05</small>Contact</a>
+    </nav>
+    <p class="menu-foot"><a href="https://www.instagram.com/shinsjoy/" target="_blank" rel="noopener">Instagram ↗</a></p>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <svg class="hero-blueprint" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <circle pathLength="1" cx="1120" cy="430" r="330" />
+        <circle pathLength="1" cx="1120" cy="430" r="250" stroke-dasharray="4 10" />
+        <path pathLength="1" d="M1120 60v740M760 430h720" />
+        <path pathLength="1" d="M26 196v330M16 196h20M16 526h20M20 361h12" />
+        <path pathLength="1" d="M1352 150l18-40 18 40-18-10z" />
+      </svg>
+
+      <div class="hero-meta" data-hero-fade>
+        <span>Artist &amp; Architectural Designer</span>
+        <span>Kerala, India</span>
+        <span>Portfolio — ’26</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="split" data-split>Shins</span></span>
+        <span class="line line-2"><em class="split" data-split>Joy</em><span class="hero-dot"></span></span>
+      </h1>
+
+      <div class="hero-art">
+        <figure class="hero-arch" data-depth="0.5">
+          <div class="arch-frame"><img src="../public/media/arch-malargal-1.webp" width="1440" height="1735" alt="Terracotta-clad double-height court at Malargal, with timber windows and hanging lamps" fetchpriority="high"></div>
+          <svg class="arch-outline" viewBox="0 0 100 140" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 139V50a49 49 0 0 1 98 0v89" /></svg>
+          <figcaption class="note note--arch">Malargal, Kottayam
+            <svg viewBox="0 0 80 40" aria-hidden="true"><path d="M2 8c20 2 44 8 62 26m0 0-12-2m12 2-1-12" /></svg>
+          </figcaption>
+        </figure>
+        <figure class="hero-card hero-card--ink" data-depth="1.3">
+          <img src="../public/media/ink-happy-wheel.jpg" width="1440" height="1121" alt="Blue ballpoint drawing of children riding in a wheelbarrow">
+          <figcaption class="note note--ink">blue ballpoint</figcaption>
+        </figure>
+        <figure class="hero-card hero-card--paint" data-depth="0.9">
+          <img src="../public/media/aadu3-walter-sayip.jpg" width="640" height="1136" alt="Detail of an acrylic painting of a red-coated officer on horseback, made for Aadu 3">
+        </figure>
+      </div>
+
+      <div class="hero-bottom" data-hero-fade>
+        <p class="hero-roles">Making
+          <span class="roller" aria-hidden="true"><span>spaces</span><span>film sets</span><span>illustrations</span><span>murals</span></span>
+          <span class="sr-only">spaces, film sets, illustrations and murals</span>
+          <br>rooted in Kerala, drawn in blue ink.</p>
+        <a class="hero-scroll" href="#intro"><span>Scroll</span><i aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Architecture</span><b>✦</b><em>Set Design</em><b>✦</b><span>Illustration</span><b>✦</b><em>Wall Art</em><b>✦</b>
+        <span>Architecture</span><b>✦</b><em>Set Design</em><b>✦</b><span>Illustration</span><b>✦</b><em>Wall Art</em><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro" id="intro">
+      <p class="label" data-reveal>(About)</p>
+      <p class="statement" data-fill>
+        Shins Joy is an artist and architectural designer who moves between buildings, film sets and sketchbooks — drawing in <em class="c-blue">blue ballpoint</em>, building in <em class="c-terra">terracotta and timber</em>, and painting worlds for <em>Malayalam cinema.</em>
+      </p>
+      <div class="intro-foot">
+        <dl class="stats">
+          <div data-reveal><dt>Disciplines</dt><dd data-count="4">0</dd></div>
+          <div data-reveal style="--d:120ms"><dt>Feature films</dt><dd data-count="2">0</dd></div>
+          <div data-reveal style="--d:240ms"><dt>sq ft — Malargal</dt><dd data-count="3000">0</dd></div>
+        </dl>
+        <p class="note note--intro" data-reveal>one pen, many worlds
+          <svg viewBox="0 0 90 50" aria-hidden="true"><path d="M4 6c26-2 58 6 70 34m0 0-13-3m13 3 2-13" /></svg>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ DISCIPLINE INDEX ============ -->
+    <section class="index" id="work" aria-labelledby="work-title">
+      <header class="section-head">
+        <p class="label" data-reveal>(Selected work)</p>
+        <h2 id="work-title" class="h2" data-reveal>Four ways of <em>making</em></h2>
+      </header>
+      <ul class="disc-list">
+        <li data-reveal><a class="disc" href="#architecture" data-img="../public/media/arch-malargal-4.webp">
+          <span class="disc-no">01</span><span class="disc-name">Architecture</span>
+          <span class="disc-desc">Homes rooted in South Indian tradition</span><span class="disc-arrow" aria-hidden="true">→</span></a></li>
+        <li data-reveal><a class="disc" href="#cinema" data-img="../public/media/aadu3-walter-sayip.jpg">
+          <span class="disc-no">02</span><span class="disc-name">Set Design</span>
+          <span class="disc-desc">Worlds for Malayalam cinema</span><span class="disc-arrow" aria-hidden="true">→</span></a></li>
+        <li data-reveal><a class="disc" href="#illustration" data-img="../public/media/ink-blue.jpg">
+          <span class="disc-no">03</span><span class="disc-name">Illustration</span>
+          <span class="disc-desc">Ballpoint, ink, charcoal, pastel, pixels</span><span class="disc-arrow" aria-hidden="true">→</span></a></li>
+        <li data-reveal><a class="disc" href="#wall-art" data-img="../public/media/painting-full.jpg">
+          <span class="disc-no">04</span><span class="disc-name">Wall Art</span>
+          <span class="disc-desc">Large-format paintings &amp; murals</span><span class="disc-arrow" aria-hidden="true">→</span></a></li>
+      </ul>
+    </section>
+
+    <!-- ============ 01 ARCHITECTURE (horizontal scroll) ============ -->
+    <section class="arch" id="architecture" aria-labelledby="arch-title">
+      <div class="arch-pin">
+        <div class="arch-track">
+          <article class="panel panel-intro">
+            <p class="label">(01) Architecture</p>
+            <h2 id="arch-title" class="project-title"><span class="split" data-split data-split-on-view>Malargal</span></h2>
+            <p class="project-sub"><em>“fragrance of tradition”</em></p>
+            <p class="project-body">A modern take on South Indian architecture with flavours of Chettinad style — terracotta, teak and light, gathered around a double-height court.</p>
+            <dl class="spec">
+              <div><dt>Type</dt><dd>Residence</dd></div>
+              <div><dt>Client</dt><dd>Vijeesh Kumar</dd></div>
+              <div><dt>Area</dt><dd>3,000 sq ft</dd></div>
+              <div><dt>Location</dt><dd>Ettumanoor, Kottayam</dd></div>
+              <div><dt>With</dt><dd><a href="https://www.instagram.com/touchedesign_studio/" target="_blank" rel="noopener">@touchedesign_studio</a></dd></div>
+              <div><dt>Photos</dt><dd><a href="https://www.instagram.com/nathanphotos.in/" target="_blank" rel="noopener">@nathanphotos.in</a></dd></div>
+            </dl>
+            <svg class="dim-line" viewBox="0 0 400 40" aria-hidden="true">
+              <path pathLength="1" d="M2 20h396M2 8v24M398 8v24M2 20l10-6M2 20l10 6M398 20l-10-6M398 20l-10 6" />
+              <text x="200" y="14" text-anchor="middle">scroll to walk through →</text>
+            </svg>
+          </article>
+
+          <figure class="panel panel-img">
+            <div class="panel-media"><img src="../public/media/arch-malargal-1.webp" width="1440" height="1735" loading="lazy" alt="Double-height court at Malargal clad in terracotta tile, with timber windows, hanging lamps and brass lamps on a black floor"></div>
+            <figcaption><span>01</span> The court — terracotta walls, carved timber windows and lamplight around a double-height void.</figcaption>
+          </figure>
+          <figure class="panel panel-img">
+            <div class="panel-media"><img src="../public/media/arch-malargal-4.webp" width="1440" height="1735" loading="lazy" alt="Front façade of Malargal: terracotta-clad volumes, white plaster bands and timber-and-grille windows"></div>
+            <figcaption><span>02</span> Façade — warm terracotta volumes held by crisp white bands.</figcaption>
+          </figure>
+          <figure class="panel panel-img">
+            <div class="panel-media"><img src="../public/media/arch-malargal-2.webp" width="1440" height="1734" loading="lazy" alt="Bedroom at Malargal with a teak window seat, fluted green glass, a carved chair, a gramophone and patterned floor tiles"></div>
+            <figcaption><span>03</span> Bedroom — a teak window seat with fluted green glass, over patterned floor tiles.</figcaption>
+          </figure>
+          <figure class="panel panel-img panel-img--arch">
+            <div class="panel-media"><img src="../public/media/arch-malargal-3.webp" width="1440" height="1734" loading="lazy" alt="Arched window at Malargal with perforated timber shutters letting in dappled light"></div>
+            <figcaption><span>04</span> Arched shutters cut with quatrefoils — light becomes ornament.</figcaption>
+          </figure>
+
+          <article class="panel panel-sketch">
+            <div class="panel-media"><img src="../public/media/sketch-kuttichira.jpg" width="720" height="1280" loading="lazy" alt="Pen sketch of the tiered roofs of the Mishkal Mosque in progress in a pocket sketchbook"></div>
+            <div class="panel-sketch-copy">
+              <p class="label">Field notes</p>
+              <h3>Drawing heritage, <em>on site</em></h3>
+              <p>Sketching the Mishkal Mosque on a heritage walk through Kuttichira, Kozhikode, with the Ranthal Design Community.</p>
+            </div>
+          </article>
+
+          <a class="panel panel-next" href="#cinema">
+            <span class="label">Next</span>
+            <span class="panel-next-title">Set Design <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+        <div class="arch-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ 02 CINEMA / SET DESIGN ============ -->
+    <section class="cinema" id="cinema" aria-labelledby="cinema-title">
+      <div class="filmstrip filmstrip--top" aria-hidden="true"></div>
+      <header class="section-head section-head--split">
+        <div>
+          <p class="label" data-reveal>(02) Set Design</p>
+          <h2 id="cinema-title" class="h2" data-reveal>Worlds built for <em>the screen</em></h2>
+        </div>
+        <p class="section-lede" data-reveal>On Malayalam film sets, Shins designs and paints the worlds that actors step into — from period canvases to science fiction.</p>
+      </header>
+
+      <article class="film film--aadu">
+        <div class="film-media" data-reveal="clip">
+          <video class="film-video" muted loop playsinline preload="none" poster="../public/media/aadu3-walter-sayip.jpg" aria-label="Process video: Chronicles of Walter Sayip being sketched and painted">
+            <source src="../public/media/aadu3-walter-sayip.mp4" type="video/mp4">
+          </video>
+          <button class="sound-toggle" type="button" aria-pressed="false"><i aria-hidden="true"></i><span>Sound off</span></button>
+          <span class="film-tag">Process · sketch to canvas</span>
+        </div>
+        <div class="film-info">
+          <div class="clapper" aria-hidden="true">
+            <div class="clapper-arm"></div>
+            <div class="clapper-board"><span>Prod. <b>Aadu 3</b></span><span>Scene <b>07</b></span><span>Take <b>03</b></span></div>
+          </div>
+          <p class="film-ml" lang="ml" data-reveal>ആട് 3</p>
+          <h3 class="film-title" data-reveal>Aadu 3</h3>
+          <p class="film-meta" data-reveal>2026 · Fantasy comedy · Directed by Midhun Manuel Thomas</p>
+          <p class="film-body" data-reveal>For the third chapter of the cult franchise, Shins painted <em>“Chronicles of Walter Sayip”</em> — an acrylic-on-canvas battle portrait created as a period piece for the film.</p>
+          <ul class="chips" data-reveal><li>Set design</li><li>Scenic painting</li><li>Acrylic on canvas</li></ul>
+        </div>
+      </article>
+
+      <article class="film film--vala">
+        <div class="film-info">
+          <div class="clapper" aria-hidden="true">
+            <div class="clapper-arm"></div>
+            <div class="clapper-board"><span>Prod. <b>Vala</b></span><span>Scene <b>01</b></span><span>Take <b>01</b></span></div>
+          </div>
+          <p class="film-ml" lang="ml" data-reveal>വല</p>
+          <h3 class="film-title" data-reveal>Vala</h3>
+          <p class="film-meta" data-reveal>Science fiction · Directed by Arun Chandu</p>
+          <p class="film-body" data-reveal>Set design for Arun Chandu’s science-fiction adventure — a Malayalam take on aliens, machines and dystopia.</p>
+          <ul class="chips" data-reveal><li>Set design</li></ul>
+        </div>
+        <div class="vala-poster" data-reveal="clip" data-tilt>
+          <div class="vala-sky" aria-hidden="true"></div>
+          <div class="vala-grid" aria-hidden="true"></div>
+          <p class="vala-glyph" lang="ml" data-text="വല" aria-hidden="true">വല</p>
+          <p class="vala-sub" aria-hidden="true">A film by Arun Chandu</p>
+          <figure class="vala-badge">
+            <img src="../public/media/film-vala-cover.jpg" width="150" height="150" loading="lazy" alt="Clapperboard from the set of Vala">
+            <figcaption>on set</figcaption>
+          </figure>
+          <div class="vala-scan" aria-hidden="true"></div>
+        </div>
+      </article>
+      <div class="filmstrip filmstrip--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 03 ILLUSTRATION ============ -->
+    <section class="illus" id="illustration" aria-labelledby="illus-title">
+      <header class="section-head section-head--split">
+        <div>
+          <p class="label" data-reveal>(03) Illustration</p>
+          <h2 id="illus-title" class="h2" data-reveal>Ink, charcoal, <em>pastel</em> &amp; pixels</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter artwork" data-reveal>
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="ballpoint" aria-pressed="false">Ballpoint</button>
+          <button type="button" class="filter" data-filter="sketchbook" aria-pressed="false">Sketchbook</button>
+          <button type="button" class="filter" data-filter="figure" aria-pressed="false">Figure</button>
+          <button type="button" class="filter" data-filter="digital" aria-pressed="false">Digital</button>
+        </div>
+      </header>
+
+      <p class="note note--illus" data-reveal>blue — the colour of emotions
+        <svg viewBox="0 0 70 60" aria-hidden="true"><path d="M8 4c-6 22 8 40 50 46m0 0-11-8m11 8-12 5" /></svg>
+      </p>
+
+      <!-- To add a piece: copy a <figure class="g-item">, set data-cat, the image and the caption. -->
+      <div class="gallery">
+        <figure class="g-item" data-cat="ballpoint" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/ink-blue.jpg" width="1080" height="1080" loading="lazy" alt="Blue ballpoint drawing of three children huddled on a bench"></button>
+          <figcaption><b>blue</b><span>Ballpoint on paper · 2020</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ballpoint" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/ink-happy-wheel.jpg" width="1440" height="1121" loading="lazy" alt="Blue ballpoint drawing of a family riding in a wheelbarrow"></button>
+          <figcaption><b>Happy Wheel</b><span>Ballpoint on paper · 2023</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ballpoint" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/ink-mother.jpg" width="1440" height="1781" loading="lazy" alt="Blue ballpoint drawing of a baby held close against its mother"></button>
+          <figcaption><b>Untitled</b><span>Ballpoint on paper · 2023</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="sketchbook" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/sketch-bench-1.webp" width="1080" height="566" loading="lazy" alt="Ink sketchbook spread of five people waiting on a bench"></button>
+          <figcaption><b>The Bench</b><span>Ink in sketchbook · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="sketchbook" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/sketch-tosh.webp" width="1440" height="1920" loading="lazy" alt="Ink-and-wash sketchbook of snowy mountains held up against the real view from a balcony in Tosh village"></button>
+          <figcaption><b>Tosh Village</b><span>Ink &amp; wash, on location · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="figure" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/figure-charcoal.webp" width="1080" height="1440" loading="lazy" alt="Charcoal figure study of a seated woman with long curly hair"></button>
+          <figcaption><b>Figure Study III</b><span>Charcoal on paper · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="sketchbook" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/sketch-bench-3.webp" width="1080" height="565" loading="lazy" alt="The Bench sketchbook held up in front of the real benches it was drawn from"></button>
+          <figcaption><b>The Bench, on location</b><span>Ink in sketchbook · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="digital" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/illus-armed-with-a-mind.webp" width="1440" height="1666" loading="lazy" alt="Greyscale digital illustration of a helmeted delivery rider handing over a parcel of red hearts, with protest posters behind"></button>
+          <figcaption><b>Armed with a Mind</b><span>Digital illustration · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="figure" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/figure-pastel-1.webp" width="1440" height="1768" loading="lazy" alt="Oil pastel figure study in red, ochre and black"></button>
+          <figcaption><b>Figure Study I</b><span>Oil pastels on paper · 2026</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="figure" data-reveal>
+          <button type="button" class="g-open" data-cursor="View"><img src="../public/media/figure-pastel-3.webp" width="1440" height="1673" loading="lazy" alt="Oil pastel figure study of a seated figure seen from behind"></button>
+          <figcaption><b>Figure Study II</b><span>Oil pastels on paper · 2026</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 04 WALL ART (scroll-driven paint roller) ============ -->
+    <section class="wall" id="wall-art" aria-labelledby="wall-title">
+      <div class="wall-pin">
+        <div class="wall-copy">
+          <p class="label" data-reveal>(04) Wall Art</p>
+          <h2 id="wall-title" class="h2" data-reveal>From a pencil line to a <em>wall</em></h2>
+          <p class="wall-body" data-reveal>Large-format paintings and murals for homes, cafés, studios and sets — sketched by hand, built up in acrylic, finished to be lived with.</p>
+          <ol class="process" data-reveal>
+            <li><img src="../public/media/painting-sketch.jpg" width="720" height="1280" loading="lazy" alt="Pencil underdrawing on canvas"><span><b>01</b> Sketch</span></li>
+            <li><img src="../public/media/painting-brush.jpg" width="720" height="1280" loading="lazy" alt="Close-up of a fine brush painting detail onto canvas"><span><b>02</b> Paint</span></li>
+            <li><img src="../public/media/painting-easel.jpg" width="720" height="1280" loading="lazy" alt="The finished painting standing on an easel"><span><b>03</b> Finish</span></li>
+          </ol>
+          <a class="btn magnetic" href="#contact" data-reveal>Commission a wall <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="wall-canvas">
+          <div class="wall-plaster" aria-hidden="true"></div>
+          <figure class="wall-paint">
+            <img src="../public/media/painting-full.jpg" width="634" height="1010" loading="lazy" alt="Chronicles of Walter Sayip: acrylic painting of a red-coated officer raising a sword on a rearing horse, soldiers and a cannon behind">
+          </figure>
+          <div class="roller-tool" aria-hidden="true">
+            <svg viewBox="0 0 400 120">
+              <rect class="roller-drum" x="10" y="10" width="380" height="46" rx="23" />
+              <path class="roller-frame" d="M390 33h22v48H200v34" />
+              <rect class="roller-grip" x="186" y="112" width="28" height="78" rx="13" />
+            </svg>
+          </div>
+          <p class="wall-cap">“Chronicles of Walter Sayip” · Acrylic on canvas · for Aadu 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="label" data-reveal>(05) Contact</p>
+      <h2 id="contact-title" class="contact-title">
+        <span class="line"><span class="split" data-split data-split-on-view>Let’s make</span></span>
+        <span class="line"><em class="split" data-split data-split-on-view>something.</em></span>
+      </h2>
+      <svg class="scribble" viewBox="0 0 600 40" aria-hidden="true"><path pathLength="1" d="M4 30c80-22 160-24 240-10s170 12 250-8c30-7 60-10 100-6" /></svg>
+      <p class="contact-lede" data-reveal>A home, a film set, an illustration or a wall that needs a story — say hello.</p>
+      <div class="contact-links" data-reveal>
+        <a class="btn btn--big magnetic" href="https://www.instagram.com/shinsjoy/" target="_blank" rel="noopener">Instagram <span>@shinsjoy</span> ↗</a>
+        <a class="btn btn--ghost magnetic" href="https://www.threads.net/@shinsjoy" target="_blank" rel="noopener">Threads ↗</a>
+        <!-- Add an email button here, e.g.:
+        <a class="btn btn--ghost magnetic" href="mailto:hello@example.com">Email ↗</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-name" aria-hidden="true"><span data-split>Shins Joy</span></p>
+    <div class="footer-row">
+      <span>© 2026 Shins Joy · Kerala, India</span>
+      <span>Architecture · Set Design · Illustration · Wall Art</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <dialog class="lightbox" aria-label="Artwork viewer">
+    <button type="button" class="lb-close" aria-label="Close viewer">Close ✕</button>
+    <button type="button" class="lb-nav lb-prev" aria-label="Previous artwork">←</button>
+    <figure class="lb-figure">
+      <img class="lb-img" alt="">
+      <figcaption class="lb-cap"></figcaption>
+    </figure>
+    <button type="button" class="lb-nav lb-next" aria-label="Next artwork">→</button>
+    <p class="lb-count" aria-live="polite"></p>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
